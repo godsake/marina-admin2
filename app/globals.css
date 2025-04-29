@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 196 100% 45%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 196 70% 95%;
+    --secondary-foreground: 196 70% 25%;
+    --muted: 196 30% 96%;
+    --muted-foreground: 196 30% 40%;
+    --accent: 196 70% 90%;
+    --accent-foreground: 196 70% 25%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 196 30% 90%;
+    --input: 196 30% 90%;
+    --ring: 196 100% 45%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 196 100% 45%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 196 70% 15%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 196 30% 15%;
+    --muted-foreground: 196 30% 70%;
+    --accent: 196 70% 15%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 196 30% 15%;
+    --input: 196 30% 15%;
+    --ring: 196 100% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Couleurs personnalisées pour Marina Fitch Bay */
+.marina-primary {
+  background-color: #3a95b5;
+  color: white;
+}
+
+.marina-secondary {
+  background-color: #a7d5e6;
+  color: #1a4a5a;
+}
+
+.marina-accent {
+  background-color: #1a4a5a;
+  color: white;
+}
+
+.marina-light {
+  background-color: #e6f3f7;
+  color: #1a4a5a;
+}
+
+.marina-border {
+  border-color: #a7d5e6;
+}
+
+.marina-gradient {
+  background: linear-gradient(to bottom right, #a7d5e6, #e6f3f7);
+}
+
+/* Variables CSS pour les couleurs de Marina */
+:root {
+  --marina-primary: #3a95b5;
+  --marina-secondary: #a7d5e6;
+  --marina-accent: #1a4a5a;
+  --marina-light: #e6f3f7;
+  --marina-ultralight: #f8fcfd;
+}
